@@ -1,5 +1,6 @@
 class PagsController < ApplicationController
   def pag1
+    render layout: "landing"
   end
 
   def pag2
