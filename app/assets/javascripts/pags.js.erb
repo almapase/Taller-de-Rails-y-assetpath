@@ -1,0 +1,30 @@
+jQuery(document).on('turbolinks:load', function() {
+  clicks = 0
+  $.backstretch([
+      "<%= asset_path('a1.jpg') %>"
+    , "<%= asset_path('a2.jpg') %>"
+    , "<%= asset_path('a3.jpg') %>"
+    , "<%= asset_path('a4.jpg') %>"
+  ], {duration: 3000, fade: 750});
+  // con esto todas las paginas tendran el fondo uno por defecto
+  $.backstretch('pause');
+
+  // id bg del boton en la pagina 2
+  $("#bg").click(function(e) {
+    e.preventDefault();
+    $.backstretch('next');
+    $.backstretch('pause');
+  });
+
+  // id pag3 creado dinamicamente por params[:action] en el body del layout
+  $("#pag3").click(function(e) {
+    clicks++;
+    if (clicks == 2) {
+      $.backstretch('next');
+      $.backstretch('pause');
+      clicks = 0;
+    }
+  });
+
+
+});
