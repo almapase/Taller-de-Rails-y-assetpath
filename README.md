@@ -28,7 +28,7 @@ llamarlo como un callback
 24. Mostrar en las 3 páginas (pag1, pag2 y pag3) los alumnos.
 25. Descargar dos imágenes y ponerlas en la pag2
 Ejercicio en clases
-26. Integrar le plugin de http://srobbin.com/jquery-plugins/backstretch/ en las 3 páginas
+26. Integrar le plugin de [Backstretch](http://srobbin.com/jquery-plugins/backstretch/) en las 3 páginas
 27. En la pag 1 la imágen debe aparecer de fondo
 28. En la pag 2 la imágen debe accionarse con un botón
 29. En la pag 3 la imágen debe accionarse al hacer dos clicks en el fondo de pantalla (no doble click, dos clicks
